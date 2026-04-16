@@ -34,12 +34,25 @@
 function romanNumber(x) {
     const roman = {I:1, V:5, X:10, L:50, C:100, D:500, M:1000}
 
-    return x.split('').reduce((result, i) => {
-        return roman
-    }, 0)
+    let total = 0
 
-    
+    for (let i = 0; i < x.length; i++) {
+        const first = roman[x[i]]
+        const next = roman[x[i + 1]]
+        
+        if (first < next) {
+            total -= first
+        }
+        else {
+            total += first
+        }
+    }
+    return total
 }
+
+romanNumber(XXI)
+//Return: 21
+
 
 /*
 array.reduce((accumulator, item) => {
