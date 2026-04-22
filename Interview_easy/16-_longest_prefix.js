@@ -11,7 +11,7 @@
 
 function longPrefix (array) {
     const str = array.map(item => String(item).split("").map(_, i).slice(0, 2))
-
+    
 
     console.log(str)
 }

@@ -11,7 +11,4 @@
  * countVowels("") -> 0
  */
 
-function countVowels(text) {
-    // TODO: implement
-}
 
