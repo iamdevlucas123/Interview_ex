@@ -9,6 +9,22 @@
  */
 
 function largestNumber(numbers) {
-    // TODO: implement
+    let result = numbers[0];
+    for (let i = 1; i < numbers.length; i++){
+        if (numbers[i] > result) {
+            result = numbers[i]
+        }
+    }
+    return result
 }
+
+function largestMax(num) {
+    const res = Math.max(...num)
+    return res
+}
+
+const list = [3, 4, 2, 1, 4, 5]
+console.log(largestNumber(list))
+console.log(largestMax(list))
+
 
