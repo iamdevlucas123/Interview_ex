@@ -9,6 +9,15 @@
  */
 
 function sumEvenNumbers(numbers) {
-    // TODO: implement
+    const evenNum = numbers
+        .filter(i => i % 2 === 0)
+        .reduce((acc, valor) => {
+        return acc + valor
+        }, 0)
+    
+    return evenNum
 }
+
+const numbersTest = [3, 4, 1, 7, 8, 5, 2]
+console.log(sumEvenNumbers(numbersTest))
 
