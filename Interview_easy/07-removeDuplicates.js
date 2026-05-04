@@ -10,6 +10,12 @@
  */
 
 function removeDuplicates(items) {
-    // TODO: implement
+    const newSet = new Set(items)
+    const newArray = [...newSet]
+    return newArray
 }
+
+const arr = [1, 6, 'f', 9, 3, 4, 'a', 6, 4, 2, 2, 1, 'a']
+console.log(removeDuplicates(arr))
+
 
