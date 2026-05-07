@@ -9,6 +9,12 @@
  */
 
 function capitalizeWords(sentence) {
-    // TODO: implement
+    const cap = sentence
+        .split(" ")
+        .map(palavra => palavra[0].toUpperCase() + palavra.slice(1))
+        .join(" ");
+    return cap
 }
+
+console.log(capitalizeWords("hello world"))
 
