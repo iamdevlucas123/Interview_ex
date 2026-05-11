@@ -11,6 +11,16 @@
  */
 
 function countWords(sentence) {
-    // TODO: implement
+    if (sentence.trim() === "") {
+        return 0
+    }
+
+    const newSentence = sentence.trim().split(/\s+/).length
+    return newSentence
 }
+
+const phrase = " Hello  World  ";
+console.log(countWords(phrase))
+
+
 
