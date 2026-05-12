@@ -18,3 +18,14 @@ function twoSum(nums, target) {
     }
 };
 
+/*
+Interview answer:
+
+“I use a hash map to optimize the search for the two numbers that sum to the target. 
+As I iterate through the array, I calculate the complement by subtracting the current 
+number from the target. Then I check if that complement already exists in the map. 
+If it does, I return the stored index and the current index because together they form the 
+target sum. Otherwise, I store the current number and its index in the map for future lookups. 
+This approach avoids nested loops and gives a time complexity of O(n) with O(n) extra space.”
+*/
+

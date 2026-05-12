@@ -9,5 +9,18 @@
  */
 
 function mergeSortedArrays(first, second) {
-    // TODO: implement
+    // create empty variables
+    // Compare elements from both arrays
+    // Add remaining elements from arr1
+    // Add remaining elements from arr2
 }
+
+const firstList = [3, 2, 5, 6, 7]
+const secondList = [2, 1, 8, 9, 10]
+
+console.log(mergeSortedArrays(firstList, secondList))
+
+/*
+const arr = [1, 3, 5]
+const newArr = arr.map((n) => )
+*/
