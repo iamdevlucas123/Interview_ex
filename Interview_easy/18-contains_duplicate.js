@@ -12,5 +12,11 @@
  */
 
 function containsDuplicate(numbers) {
+    const check = numbers.length !== new Set(numbers).size
+    if (check) {
+        return true
+    } else return false
 }
 
+const arr = [1, 2, 3, 1]
+console.log(containsDuplicate(arr))

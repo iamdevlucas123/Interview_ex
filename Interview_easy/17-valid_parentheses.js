@@ -3,7 +3,7 @@
  * https://leetcode.com/problems/valid-parentheses/
  * Difficulty: Easy
  *
- * Given a string containing only the characters `(`, `)`, `{`, `}`, `[` and `]`,
+ * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', 
  * determine if the input string is valid.
  *
  * A string is valid if:
