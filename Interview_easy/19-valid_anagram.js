@@ -15,4 +15,17 @@
  */
 
 function isAnagram(s, t) {
+    if (s.length != t.length) {
+        return false
+    }
+
+    const sorted_s = s.toLowerCase().split('').sort().join()
+    const sorted_t = t.toLowerCase().split('').sort().join()
+    
+    return sorted_s === sorted_t
 }
+
+const string1 = 'anagram'
+const string2 = 'naGaram'
+
+console.log(isAnagram(string1, string2))
