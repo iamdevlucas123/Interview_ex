@@ -12,5 +12,20 @@
  * firstUniqueChar("aabb") -> -1
  */
 
-function firstUniqueChar(text) {
+function firstUniqueChar(s) {
+    const frequency = new Map();
+
+    // Conta quantas vezes cada caractere aparece
+    for (const char of s) {
+        frequency.set(char, (frequency.get(char) || 0) + 1);
+    }
+
+    // Encontra o primeiro caractere com frequência 1
+    for (let i = 0; i < s.length; i++) {
+        if (frequency.get(s[i]) === 1) {
+            return i;
+        }
+    }
+
+    return -1;
 }
